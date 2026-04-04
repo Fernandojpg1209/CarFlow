@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Meu Projeto</title>
-<link rel="stylesheet" href="/static/style.css">
-</head>
+{% load static %}
 
-<body>
+<h1>CarFlow 🚗</h1>
+<p>Projeto rodando com sucesso!</p>
 
-<h1>Projeto DevLobby</h1>
-
-<p>Bem-vindo ao meu primeiro site com Python.</p>
-
-<a href="/cadastro">Ir para cadastro</a>
-
-</body>
-</html>
+<a href="{% url 'cadastro' %}">
+    <button>Ir para Cadastro</button>
+</a>
