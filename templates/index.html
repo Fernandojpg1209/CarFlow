@@ -1,8 +1,72 @@
-{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarFlow</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
 
-<h1>CarFlow 🚗</h1>
-<p>Projeto rodando com sucesso!</p>
+    <!-- Header -->
+    <header>
+        <h1>CarFlow</h1>
+        
+                <!-- Barra de busca -->
+        <div class="busca">
+            <input type="text" placeholder="Buscar produtos...">
+            <button>🔍</button>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="{% url 'cadastro' %}">Cadastro</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<a href="{% url 'cadastro' %}">
-    <button>Ir para Cadastro</button>
-</a>
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Tudo em um só lugar</h2>
+    </section>
+
+    <!-- Produtos -->
+    <main>
+        <h2>Produtos</h2>
+        <div class="produtos">
+
+            <div class="produto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_722075-MLB105513628318_012026-F.webp"> <!--Temporário!-->
+                <h3>Cera Automotiva</h3>
+                <p>R$ 32,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_882155-MLA99831787425_112025-F.webp" alt="Shampoo automotivo"> <!--Temporário!-->
+                <h3>Shampoo Neutro Automotivo</h3>
+                <p>R$ 52,00</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://pecahoje.vteximg.com.br/arquivos/ids/199195-1000-1000/pastilha-freio-d-0322-jac-j2-v5-c1.jpg" alt="Pastilha de freio"> <!--Temporário!-->
+                <h3>Pastilha de Freio</h3>
+                <p>R$ 89,90</p>
+                <button>Comprar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+</html>
